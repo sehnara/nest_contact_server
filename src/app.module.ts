@@ -7,7 +7,7 @@ import { ContactsModule } from './contacts/contacts.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
 
 @Module({
-  imports: [TypeOrmModule.forRoot(), ContactsModule],
+  imports: [ContactsModule],
   controllers: [AppController],
   providers: [ AppService],
 })
